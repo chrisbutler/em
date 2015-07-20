@@ -20,5 +20,4 @@
     "comments": <%= config.generator.comments %>,
     "samples": <%= config.generator.samples %>
   }
-
 }
