@@ -1,5 +1,2 @@
-#
-# Meteor.publish 'items', (param1, param2) ->
-#   @ready()
-#   return
-#
+Meteor.publish '<%= name %>', ->
+  <%= collectionName %>.find()
