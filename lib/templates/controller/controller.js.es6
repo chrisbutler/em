@@ -9,11 +9,14 @@
     // the subscription handle is added to a reactive list
     // and when all items in this list are ready, this.ready()
     // returns true in any of your route functions.
+
+    return this.subscribe('<%= name %>', this.params._id).wait();
   },
 
   data: function () {
     // return a global data context like this:
-    // Items.findOne({_id: this.params._id});
+    
+    return <%= collection %>.findOne({_id: this.params._id});
   },
 
   action: function () {
@@ -23,6 +26,7 @@
     // might also perform some conditional logic. Override
     // the data context by providing it as an option in the
     // last parameter.
+
     this.render('<%= name %>', { /* data: {} */});
   }
 });
