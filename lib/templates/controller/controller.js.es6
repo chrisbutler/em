@@ -18,10 +18,10 @@
 
   data: function () {
     <% if (generator.comments) { %>
-    // return a global data context like this:
+    // return a global data context like this example:
     <% } %>
     <% if (generator.samples) { %>
-    return <%= collectionName %>.findOne({_id: this.params._id});
+    return Meteor.users.findOne({_id: this.params._id});
     <% } %>
   },
 

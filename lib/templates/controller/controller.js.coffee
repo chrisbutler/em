@@ -20,7 +20,7 @@
     # return a global data context like this:
     <% } %>
     <% if (generator.samples) { %>
-    return Items.findOne({_id: this.params._id})
+    return Meteor.users.findOne({_id: this.params._id})
     <% } %>
 
   action: ->
