@@ -14,11 +14,5 @@
   "route": {
     "controller": <%= config.route.controller %>,
     "template": <%= config.route.template %>
-  },
-
-  "generator": {
-    "comments": <%= config.generator.comments %>,
-    "samples": <%= config.generator.samples %>
-  },
-
+  }
 }
