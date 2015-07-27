@@ -17,7 +17,6 @@
   },
 
   "generator": {
-    "comments": <%= config.generator.comments %>,
-    "samples": <%= config.generator.samples %>
+    "comments": <%= config.generator.comments %>
   }
 }

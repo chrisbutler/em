@@ -1,2 +1,2 @@
 Meteor.methods
-  '/app/<%= name %>/method': ->
+  '/<%= name %>/method': ->
